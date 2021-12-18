@@ -1,5 +1,5 @@
 {
-  "name": "template-web-front",
+  "name": "template-web-frontend",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -21,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cherrypicker1113/template-web-front.git"
+    "url": "git+https://github.com/cherrypicker1113/template-web-frontend.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cherrypicker1113/template-web-front/issues"
+    "url": "https://github.com/cherrypicker1113/template-web-frontend/issues"
   },
-  "homepage": "https://github.com/cherrypicker1113/template-web-front#readme",
+  "homepage": "https://github.com/cherrypicker1113/template-web-frontend#readme",
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/plugin-transform-runtime": "^7.16.5",
