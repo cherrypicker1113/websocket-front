@@ -2,6 +2,14 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
-        "strict": true
+        "jsx": "react-jsx",
+        "strict": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+            "@src/*": [
+                "src/*"
+            ]
+        },
     }
 }
