@@ -1,24 +1,29 @@
 module.exports = {
-  'env': {
+  env: {
     'browser': true,
     'commonjs': true,
     'es2021': true,
+    'node': true
   },
-  'extends': [
-    'plugin:react/recommended',
-  ],
-  'parser': '@typescript-eslint/parser',
-  'parserOptions': {
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    'project': './tsconfig.json',
     'ecmaFeatures': {
       'jsx': true,
     },
     'ecmaVersion': 13,
   },
-  'plugins': [
+  plugins: [
     'react',
     '@typescript-eslint',
   ],
-  'rules': {
-    "react/react-in-jsx-scope": "off",
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'eslint-config-prettier'
+  ],
+  rules: {
+    'react/react-in-jsx-scope': 'off',
   },
 };
