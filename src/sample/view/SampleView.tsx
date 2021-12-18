@@ -2,6 +2,7 @@ import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchSamples, SamplesState} from "@src/sample/slice/samplesSlice";
 import {RootState} from "@src/store";
+import styled from "styled-components";
 
 export function SampleView() {
     const {samples, page} = useSelector<RootState, SamplesState>(state => state.samples);
@@ -12,10 +13,19 @@ export function SampleView() {
     }, []);
 
     return (
-        <ul>
+        <List>
             {samples.map((sample, idx) => (
-                <li key={idx}>{sample.name}</li>
+                <ListItem key={idx}>{sample.name}</ListItem>
             ))}
-        </ul>
+        </List>
     );
 }
+
+const List = styled.ul`
+    background-color: black;
+`;
+
+const ListItem = styled.li`
+    border: 1px solid white;
+    color: white;
+`;
