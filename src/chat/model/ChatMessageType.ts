@@ -1,0 +1,1 @@
+export type ChatMessageType = 'user-message' | 'user-in' | 'user-out';

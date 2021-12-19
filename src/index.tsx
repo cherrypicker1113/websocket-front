@@ -1,13 +1,13 @@
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
-import {SampleView} from '@src/sample/view/SampleView';
 import {store} from '@src/store';
+import {ChatView} from '@src/chat/view/ChatView';
 
 ReactDOM.render(
     <BrowserRouter>
         <Provider store={store}>
-            <SampleView/>
+            <ChatView/>
         </Provider>
     </BrowserRouter>,
     document.getElementById('root')

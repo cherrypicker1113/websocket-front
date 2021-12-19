@@ -1,0 +1,1 @@
+export type ChatSocketAction = 'init' | 'message';
